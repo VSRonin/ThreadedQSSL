@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     QObject::connect(&clientSide, &LanClient::connected, []() {
         qDebug() << "Client Connected"; 
     });
-    QObject::connect(&clientSide, &LanClient::encrypted, [&clientSide]() {
+    QObject::connect(&clientSide, &LanClient::encrypted, []() {
         qDebug() << "Client Encrypted";
     });
     QObject::connect(&clientSide, &LanClient::error, [](QAbstractSocket::SocketError err) {
