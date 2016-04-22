@@ -1,7 +1,6 @@
 #include "LanClient.h"
 #include <QSslSocket>
 #include <QDataStream>
-typedef std::underlying_type<MtgGlobals::BbComCodes>::type ComIDType;
 LanClient::LanClient(QObject* parent)
 	:QObject(parent)
 	,m_host("localhost")

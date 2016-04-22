@@ -1,7 +1,6 @@
 #include "LanServerSocket.h"
 #include <QDataStream>
 #include <QFile>
-typedef std::underlying_type<MtgGlobals::BbComCodes>::type ComIDType;
 LanServerSocket::LanServerSocket(QObject *parent)
     :QSslSocket(parent)
     , m_socketID(0)
